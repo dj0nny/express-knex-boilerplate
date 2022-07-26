@@ -14,7 +14,8 @@ app.get('/', (req, res) => {
   });
 });
 
-app.use(errorHandler);
 app.use('/api', api);
+
+app.use(errorHandler);
 
 module.exports = app;
