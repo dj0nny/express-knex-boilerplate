@@ -71,7 +71,7 @@ module.exports = {
 ```
 For this project, the default database client is MySQL. List of supported clients by Knex: http://knexjs.org/guide/#node-js
 
-You can use multiple configuration based on your Node environment. For example
+You can use multiple configurations based on your Node environment. For example
 
 ```javascript
 module.exports = {
@@ -157,7 +157,7 @@ Example request body:
 ```json
   {
     "id": 1,
-    "name": "clean the floor"
+    "name": "clean the floor again"
   }
 ```
 ## Tech Stack
