@@ -104,6 +104,44 @@ module.exports = {
   },
 };
 ```
+
+## Knex migrations and seeds
+
+### Migrations
+
+For generating a new migration:
+
+```bash
+  $ knex migrate:make migration_name
+```
+For running the migration:
+
+```bash
+  $ knex migrate:latest
+
+  # You can also pass the --env flag or set NODE_ENV to select an alternative environment
+
+  $ knex migrate:latest --env production
+```
+### Seed
+
+To create a seed file, run:
+
+```bash
+  $ knex seed:make seed_name
+```
+To run seed files, execute:
+
+```bash
+  $ knex seed:run
+```
+
+To run specific seed files, execute:
+
+```bash
+  $ knex seed:run --specific=seed-filename.js --specific=another-seed-filename.js
+```
+
 ## API Reference
 
 #### Get all todo
